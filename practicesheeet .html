@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // literal string
+        var a="Aminul Nayem"
+        console.log(a)
+        console.log(typeof(a))
+
+        // conductor string
+        var a1=String("Aminul Nayem")
+        console.log(a1)
+        console.log(typeof(a1))
+
+        // object string
+        var a2=new String("Aminul Nayem")
+        console.log(a2)
+        console.log(typeof(a2))
+
+        // comparison object to object 
+        var a3=new String("Aminul Nayem")
+        var a4=new String("Aminul Nayem")
+        console.log(a3==a4)
+        console.log(a3===a4)
+
+        // comparison string to object
+        var a5="Aminul"
+        var a6=new String("Aminul")
+        console.log(a5==a6)
+        console.log(a5===a6)
+
+
+        // slice 
+        var b="this is ,Aminul ,Naye,M"
+        var b1=b.slice(8,14)
+        console.log(b1)
+        console.log(b1.length)
+
+        var b3="this is ,Aminul ,Naye,M"
+        var b4=b3.slice(-12,-6)
+        console.log(b4)
+        console.log(b4.length)
+
+        //substr
+        var c="this is ,Aminul ,Naye,M"
+        var c1=c.substr(9,6)
+        console.log(c1)
+        console.log(c1.length)
+
+
+        // substring
+        var c2="this is ,Aminul ,Naye,M"
+        var c3=c2.substring(8,14)
+        console.log(c3)
+        console.log(c3.length)
+
+        // replace
+
+        var d="Aminul Aminul"
+        var d1=d.replace("Aminul","Nayem")
+        console.log(d1)
+
+        var d2=d.replace(/AMINUL/i,"jannatual")
+        console.log(d2)
+
+        var d3=d.replace(/Aminul/g,"Nayem")
+        console.log(d3)
+
+        var d4="aminul AMINUL "
+        var d5=d4.replaceAll("aminul","nayem")
+        console.log(d5)
+
+        // uppercase
+        var e="HEllo world"
+        var e1=e.toUpperCase()
+        console.log(e1)
+        // lowercase
+        var e2="HELLO WORLD"
+        var e3=e2.toLowerCase()
+        console.log(e3)
+
+        // trim
+        var f="   NAyem  "
+        var f1=f.trim()
+        console.log(f)
+        console.log(f.length)
+        console.log(f1)
+        console.log(f1.length)
+        var f2=f.trimStart()
+        console.log(f2)
+        console.log(f2.length)
+        var f3=f.trimEnd()
+        console.log(f3)
+        console.log(f3.length)
+
+
+        // forloop
+
+        var s=""
+        for(var i=0;i<10;i++){
+            s=s+i+" "
+
+        }
+        alert(s)
+
+        // prompt
+        let g=1*prompt("Enter a number")
+        let g1=1*prompt("enter another number")
+        alert("the result "+g+" and "+g1+" is :"+(g*g1))
+        alert("the result "+g+" and "+g1+" is :"+(g/g1))
+        alert("the result "+g+" and "+g1+" is :"+(g+g1))
+        alert("the result "+g+" and "+g1+" is :"+(g-g1))
+        
+    </script>
+</body>
+</html>
